@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Delivery</title>
+    </head>
+    <body>
+        <h1>For your Door-Step Delivery <img src="shoes.jpg" alt="shoe" width="40" height="30"> </h1>
+        <hr>
+        <form action="/door-step-delivery" method="POST">
+        <fieldset>
+            <legend>Your details</legend>
+               <ul>
+                <li><p><label>Name <p> <input type="text" name="fullname" value="Enter your fullname" maxlength="50"></label></p></li>
+        
+                <li><p><label>Email <p> <input type="email" name="email" value="Enter your email here" maxlength="50"></label></p></li>
+                
+                <li><p><label>Phone number <p> <input type="tel" name="age" value="Enter your age in years" maxlength="50"></label></p></li>
+        
+                <li>Sex</li>
+                <label><input type="radio" name="sex" value="Male" id="male" checked>Male</label>
+                <label><input type="radio" name="sex" value="female id="female">Female</label>
+
+                <li><p>Home address</p></li>
+                <label><textarea name="message" rows="5" cols="30">Give details of your home address</textarea></label>
+                </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Delivery Specs</legend>
+            <ul>
+                <li>Shoe type</li>
+                <label><input type="radio" name="type" value="Men" id="men" checked>Men's Shoe</label>
+                <label><input type="radio" name="type" value="ladies" id="ladies" checked>Ladies' Shoe</label>
+            
+                <li>Color</li>
+                <label><input type="radio" name="Color" value="white" id="white" checked>White</label>  
+                <label><input type="radio" name="Color" value="black" id="Black"> Black</label> 
+                <label><input type="radio" name="Color" value="red" id="red">Red</label>  
+                <label><input type="radio" name="Color" value="brown" id="brown">Brown</label> 
+                <label><input type="radio" name="Color" value="purple" id="purple">Purple</label>
+                
+                <li>Shoe Size</li>
+                <label><input type="radio" name="size" value="Medium" id="medium" checked>Medium</label>
+                <label><input type="radio" name="size" value="small" id="small"> Small</label>
+                <label><input type="radio" name="size" value="big" id="big">Big</label>
+
+                <li>Delivery mode</li>
+                <label><input type="radio" name="mode" value="regular" id="regular">Regular mode</label>
+                <label><input type="radio" name="mode" value="vip" id="vip">VIP mode</label>
+                <label><input type="radio" name="mode" value="vvip" id="vvip">VVIP mode</label>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Information</legend>
+            <ul>
+           <li> <select name="Bank Name">
+            <option>-select a bank-</option>
+            </select></li>
+
+            <li><p><label>Account Name <p> <input type="text" name="fullname" value="Enter your account name" maxlength="50"></label></p></li>
+            <li><p><label>Account Number <p> <input type="tel" name="accountnumber" value="Enter your account number" maxlength="50"></label></p></li>    
+        
+            <li><p>Or Pay on Delivery? <input type="radio" name ="pod" value="yes" id="yes">YES    <input type="radio" name ="pod" value="NO" id="NO">NO</p></li>
+        </ul>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+        </form>
+        <P>Copyright &copy; 2020</P>
+        <small>All rights reserved</small>
+    </body>
+</html>
